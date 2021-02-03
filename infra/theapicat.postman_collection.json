@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "theapicat",
+		"_postman_id": "a6c7e1e8-56b0-535f-0240-c9ccd00f7a90",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "by origin",
+			"request": {
+				"url": "127.0.0.1:5000/origin/United States",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "by temperament",
+			"request": {
+				"url": "127.0.0.1:5000/temperament/Intelligent",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"url": "127.0.0.1:5000/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "by breed",
+			"request": {
+				"url": "127.0.0.1:5000/breed/aegean",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "17d94b92-754f-46eb-99a0-65be65b5d18f",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
