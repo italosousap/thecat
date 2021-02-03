@@ -2,7 +2,7 @@
 
 Python API application
 
-## Installation of dependencies
+## installing the dependencies
 
 command to set up the stable repository
 ```bash
