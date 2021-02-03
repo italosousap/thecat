@@ -4,7 +4,7 @@ Python API application
 
 ## Installation of dependencies
 
-Docker
+command to set up the stable repository
 ```bash
 sudo apt-get update
 
@@ -16,10 +16,7 @@ sudo apt-get install \
     software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-```
-command to set up the stable repository
 
-```
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
@@ -32,18 +29,22 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 ## Usage
 
-```python
-import foobar
+```bash
+cd thecat/infra
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+#initialize docker swarm
+sudo docker swarm init
+
+#deploy stack
+sudo docker stack deploy -c docker-compose.yml case
+
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Running local, access the url 127.0.0.1:5000
 
-Please make sure to update tests as appropriate.
+If you are running in the cloud like EC2, you must update the postman collection host to the instance IP
+
+Paths and token access are in the postman's collection
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
