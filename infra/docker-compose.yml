@@ -37,7 +37,7 @@ services:
       - stack
 
   losgatos:
-    image: losgatos:0.0.5
+    image: italosp/losgatos:0.0.2
     ports: 
       - 5000:5000
     networks:
